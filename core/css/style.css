@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap");
+@font-face {
+  font-family: "Pacifico";
+  src: url("../../fonts/Pacifico-Regular.ttf");
+}
+::-moz-selection {
+  background-color: #fec260;
+}
+::selection {
+  background-color: #fec260;
+}
+
+body {
+  font-family: "PT Sans Caption", sans-serif;
+  line-height: 1.9rem;
+  background-color: #f7ecde;
+}
+
+.form-control {
+  border: 0;
+}
+
+.form-control:focus {
+  box-shadow: #fec260 0px 1px 2px, #fec260 0px 0px 0px 2px;
+  border: 0;
+}
+
+main {
+  margin-block: 2rem;
+}
+main .container {
+  padding-block: 0.2rem;
+}
+main header {
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-inline: auto;
+}
+main header h1 {
+  font-family: "Pacifico", sans-serif;
+  font-size: 3rem;
+}
+main header .h-animation {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  z-index: -1;
+  top: 70%;
+  background-color: #fec260;
+  transition: top 0.5s;
+}
+main header:hover .h-animation {
+  top: 50%;
+}
+main #form {
+  padding-block: 2rem;
+}
+main #form .form {
+  padding-inline: 0.7rem;
+  padding-block: 1.3rem;
+  border-block: 2px dotted black;
+}
+main #form h2 {
+  margin-bottom: 1.7rem;
+  background-image: linear-gradient(to right, #3da55b, #b2ab49);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  font-size: 1.6rem;
+}
+main #form button {
+  display: block;
+  margin: auto;
+  padding-inline: 40px !important;
+  color: white;
+  background-color: #d1512d;
+}
+main table #visitBtn {
+  background-color: #8a9e23;
+}
+
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=style.css.map */
