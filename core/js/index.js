@@ -36,7 +36,6 @@ class Home {
   }
 
   addItem() {
-    console.log("hello");
     if (this.validationName() && this.validationUrl()) {
       const item = {
         name: this.nameInput.value,
@@ -46,8 +45,6 @@ class Home {
       this.clearInputs();
       localStorage.setItem("bookmarkList", JSON.stringify(this.allData));
       this.displayData(this.allData);
-    } else {
-      console.log("no");
     }
   }
 
