@@ -8,6 +8,8 @@
     <meta name="description" content="save all favourite websites here">
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="keywords" content="bookmarker, save website">
+    <link rel="icon" type="image/x-icon"
+        href="./assets/images/books_tags_labels_book_mark_banner_tag_label_bookmark_icon_210817.ico">
     <!-- css -->
     <!-- fontawesome -->
     <link rel="stylesheet" href="./core/css/all.min.css">
@@ -30,25 +32,22 @@
                             class="fa-solid fa-bookmark"></i></h2>
                     <div class="mb-3">
                         <label for="name"><i class="fas fa-book-bookmark"></i> Site Name:</label>
-                        <input oninput="validationName()" type="text" id="name" placeholder="Bookmarker Name" required
-                            class="form-control mb-2">
+                        <input type="text" id="name" placeholder="Bookmarker Name" required class="form-control mb-2">
                         <p id="nameErr" class="alert alert-danger d-none">[A-Z][a-z][0-9] 3 to 12 Characters</p>
                         <p id="nameRepeat" class="alert alert-danger d-none">Name already exist</p>
                     </div>
                     <div class="mb-3">
                         <label for="url"><i class="fas fa-link"></i> Site URL:</label>
-                        <input oninput="validationUrl()" type="url" id="url" placeholder="Website URL" required
-                            class="form-control mb-2">
+                        <input type="url" id="url" placeholder="Website URL" required class="form-control mb-2">
                         <p id="urlErr" class="alert alert-danger d-none">Invalid URL</p>
                     </div>
-                    <button class="btn" id="submitBtn" onclick="addItem()">Submit</button>
-                    <button class="btn d-none" id="updateBtn" onclick="updateItem()">Update</button>
+                    <button class="btn" id="submitBtn">Submit</button>
+                    <button class="btn d-none" id="updateBtn">Update</button>
                 </div>
             </section>
             <section>
                 <div class="mb-3 w-75 m-auto">
-                    <input type="search" class="form-control" id="searchInput" oninput="search()"
-                        placeholder="Search...">
+                    <input type="search" class="form-control" id="searchInput" placeholder="Search...">
                 </div>
                 <table class="table text-center">
                     <thead>
